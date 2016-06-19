@@ -5,6 +5,6 @@ before_install:
 - brew tap oclint/formulae
 - brew install oclint
 script:
-  - xcodebuild | tee xcodebuild.log
+  - xcodebuild -dry-run | tee xcodebuild.log
   - oclint-xcodebuild
   - oclint-json-compilation-database
