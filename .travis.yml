@@ -12,6 +12,7 @@ before_install:
 - brew cask uninstall oclint
 - brew tap oclint/formulae
 - brew install oclint
+- oclint -version
 script:
   - xcodebuild -dry-run | tee xcodebuild.log
   - oclint-xcodebuild
