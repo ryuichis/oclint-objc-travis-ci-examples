@@ -5,6 +5,8 @@ matrix:
       osx_image: xcode8
     - os: osx
       osx_image: xcode9
+    - os: osx
+      osx_image: xcode9.1
 before_install:
 - brew cask uninstall oclint
 - brew tap oclint/formulae
