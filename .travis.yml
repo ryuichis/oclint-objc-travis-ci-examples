@@ -12,6 +12,6 @@ before_install:
 - brew install oclint
 - oclint -version
 script:
-  - xcodebuild -dry-run | tee xcodebuild.log
+  - xcodebuild | tee xcodebuild.log
   - oclint-xcodebuild
   - oclint-json-compilation-database
